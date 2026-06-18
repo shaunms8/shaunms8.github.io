@@ -6,6 +6,12 @@ This project analyzes Miami crime data and Miami-Dade storm event data to examin
 
 The project was enhanced for CS 499 Category One: Software Design and Engineering. The original artifact was notebook-based, and this enhanced version redesigns the workflow into a modular Python project.
 
+## Code Review Video
+
+The CS 499 code review video reviews the original Miami Crime and Storm Data Analysis System artifact, explains code review findings, and describes planned enhancements for software design and engineering, algorithms and data structures, and databases.
+
+Video link: [Code Review Video] https://youtu.be/gVhiYFHuaxI
+
 ## Enhancement Category
 
 Category One: Software Design and Engineering
@@ -41,11 +47,4 @@ miami_crime_storm_analysis/
 └── output/
     ├── charts/
     └── reports/
-# Miami Crime Storm Analysis
-Computer Science Capstone
 
-## Code Review Video
-
-The CS 499 code review video reviews the original Miami Crime and Storm Data Analysis System artifact, explains code review findings, and describes planned enhancements for software design and engineering, algorithms and data structures, and databases.
-
-Video link: [Code Review Video] https://youtu.be/gVhiYFHuaxI
