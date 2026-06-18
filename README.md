@@ -6,7 +6,7 @@ This project analyzes Miami crime data and Miami-Dade storm event data to examin
 
 The project was enhanced for CS 499 Category One: Software Design and Engineering. The original artifact was notebook-based, and this enhanced version redesigns the workflow into a modular Python project.
 
-Repository: [CS 499 Capstone GitHub Repository](github.com/shaunms9/shaunms8.github.io)
+Repository: [CS 499 Capstone GitHub Repository](https://github.com/shaunms8/shaunms8.github.io)
 
 ## Code Review Video
 
