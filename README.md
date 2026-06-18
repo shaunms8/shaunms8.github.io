@@ -44,17 +44,25 @@ This enhancement demonstrates algorithmic thinking because it goes beyond displa
 
 ```text
 miami_crime_storm_analysis/
-├── main.py
+├── database/
+│   └── dat375_export.sql
+├── original_artifact/
+│   ├── dat375mod4Project_shaunSanders.ipynb
+│   └── README.md
+├── output/
+│   ├── charts/
+│   │   └── miami_crime_storm_activity.png
+│   └── reports/
+│       ├── miami_daily_crime_storm_summary.csv
+│       ├── storm_crime_risk_rankings.csv
+│       └── miami_crime_storm_report.txt
+├── analysis.py
+├── cleaning.py
 ├── config.py
 ├── database.py
-├── cleaning.py
-├── analysis.py
-├── visualization.py
+├── main.py
 ├── reporting.py
+├── visualization.py
 ├── requirements.txt
 ├── README.md
-├── .env
-└── output/
-    ├── charts/
-    └── reports/
-
+└── .gitignore
