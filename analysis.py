@@ -6,6 +6,121 @@ from scipy.stats import ttest_ind
 START_DATE = "2024-08-01"
 END_DATE = "2024-10-31"
 
+def assign_risk_level(risk_score):
+    """
+    Assigns a readable risk level based on the calculated risk score.
+
+    Args:
+        risk_score (float): The calculated storm/crime risk score.
+
+    Returns:
+        str: Risk level label.
+    """
+    if risk_score >= 2.0:
+        return "High"
+    elif risk_score >= 1.0:
+        return "Moderate"
+    else:
+        return "Low"
+    
+def calculate_risk_score(crime_count, baseline_crime, storm_count):
+    """
+    Calculates a risk score for a date based on crime activity and storm activity.
+
+    The score increases when crime count is above the baseline and when storm
+    events are present on the same date.
+
+    Args:
+        crime_count (int): Number of crime incidents on the date.
+        baseline_crime (float): Average daily crime count.
+        storm_count (int): Number of storm events on the date.
+
+    Returns:
+        float: Calculated risk score.
+    """
+    if baseline_crime <= 0:
+        return 0.0
+
+    crime_factor = crime_count / baseline_crime
+    storm_factor = storm_count
+
+    return round(crime_factor + storm_factor, 2)
+
+def rank_storm_crime_risk(daily_summary):
+    """
+    Ranks dates where storm activity overlaps with higher-than-normal crime activity.
+
+    This function represents the Category Two Algorithms and Data Structures enhancement.
+    It uses dictionaries, a set, a list, and a pandas DataFrame to identify and rank
+    dates with both storm activity and elevated crime counts.
+
+    Args:
+        daily_summary (DataFrame): DataFrame with Date, CrimeCount, and StormCount columns.
+
+    Returns:
+        DataFrame: Ranked dates with crime count, storm count, risk score, and risk level.
+    """
+    required_columns = {"Date", "CrimeCount", "StormCount"}
+
+    if not required_columns.issubset(daily_summary.columns):
+        missing = required_columns - set(daily_summary.columns)
+        raise ValueError(f"daily_summary is missing required columns: {missing}")
+
+    daily_summary = daily_summary.copy()
+    daily_summary["Date"] = pd.to_datetime(daily_summary["Date"])
+
+    crime_by_day = dict(zip(daily_summary["Date"], daily_summary["CrimeCount"]))
+    storm_by_day = dict(zip(daily_summary["Date"], daily_summary["StormCount"]))
+
+    storm_dates = set(
+        daily_summary.loc[daily_summary["StormCount"] > 0, "Date"]
+    )
+
+    baseline_crime = daily_summary["CrimeCount"].mean()
+
+    ranked_results = []
+
+    for current_date in daily_summary["Date"]:
+        crime_count = crime_by_day.get(current_date, 0)
+        storm_count = storm_by_day.get(current_date, 0)
+
+        if current_date in storm_dates and crime_count > baseline_crime:
+            risk_score = calculate_risk_score(
+                crime_count=crime_count,
+                baseline_crime=baseline_crime,
+                storm_count=storm_count
+            )
+
+            ranked_results.append({
+                "Date": current_date,
+                "CrimeCount": crime_count,
+                "StormCount": storm_count,
+                "BaselineCrime": round(baseline_crime, 2),
+                "RiskScore": risk_score,
+                "RiskLevel": assign_risk_level(risk_score)
+            })
+
+    ranked_df = pd.DataFrame(ranked_results)
+
+    if ranked_df.empty:
+        return pd.DataFrame(
+            columns=[
+                "Date",
+                "CrimeCount",
+                "StormCount",
+                "BaselineCrime",
+                "RiskScore",
+                "RiskLevel"
+            ]
+        )
+
+    ranked_df = ranked_df.sort_values(
+        by="RiskScore",
+        ascending=False
+    ).reset_index(drop=True)
+
+    return ranked_df
+
 
 def create_daily_summary(crime_df: pd.DataFrame, storm_df: pd.DataFrame) -> pd.DataFrame:
     """

@@ -30,6 +30,16 @@ This enhanced version separates the project into individual Python modules:
 - `reporting.py` exports the CSV and text report.
 - `main.py` controls the full program workflow.
 
+Category Two: Algorithms and Data Structures
+
+## Enhancement Summary
+
+For the algorithms and data structures enhancement, I added a risk-ranking algorithm that compares daily Miami crime counts with Miami-Dade storm event counts. The algorithm uses pandas DataFrames for grouped daily summaries, dictionaries for fast date-based lookup, a set for efficient storm-date matching, and a list of dictionaries to build ranked output records.
+
+The algorithm calculates the average daily crime count as a baseline. It then checks each date in the selected range and identifies dates where storm activity occurred and crime activity was above the baseline. For those dates, the program calculates a risk score, assigns a risk level, sorts the dates by highest risk score, and exports the results to a CSV file.
+
+This enhancement demonstrates algorithmic thinking because it goes beyond displaying data and creates a repeatable process for identifying dates where crime and storm activity overlap in a meaningful way.
+
 ## Project Structure
 
 ```text
