@@ -12,11 +12,11 @@ The CS 499 code review video reviews the original Miami Crime and Storm Data Ana
 
 Video link: [Code Review Video] https://youtu.be/gVhiYFHuaxI
 
-## Enhancement Category
+# Enhancement Category
 
-Category One: Software Design and Engineering
+## Category One: Software Design and Engineering
 
-## Enhancement Summary
+Enhancement Summary
 
 The original project was completed through a Jupyter Notebook-style workflow. While the original version performed the analysis, the code was less modular and harder to maintain, test, reuse, or expand.
 
@@ -30,9 +30,9 @@ This enhanced version separates the project into individual Python modules:
 - `reporting.py` exports the CSV and text report.
 - `main.py` controls the full program workflow.
 
-Category Two: Algorithms and Data Structures
+## Category Two: Algorithms and Data Structures
 
-## Enhancement Summary
+Enhancement Summary
 
 For the algorithms and data structures enhancement, I added a risk-ranking algorithm that compares daily Miami crime counts with Miami-Dade storm event counts. The algorithm uses pandas DataFrames for grouped daily summaries, dictionaries for fast date-based lookup, a set for efficient storm-date matching, and a list of dictionaries to build ranked output records.
 
