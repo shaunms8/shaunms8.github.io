@@ -56,12 +56,24 @@ This enhancement includes:
 
 This demonstrates relational querying, filtering, joining, aggregation, database validation, and secure database-to-Python integration.
 
+## CS 499 Narratives
+
+The following narratives document the completed enhancements for the Miami Crime and Storm Data Analysis System. Each narrative explains the purpose of the enhancement, the technical improvements made, and how the work aligns with the CS 499 course outcomes.
+
+- [Milestone Two Narrative: Software Engineering and Design](narratives/CS%20499%20Milestone%20Two%20Narrative.docx)
+- [Milestone Three Narrative: Algorithms and Data Structures](narratives/CS%20499%20Milestone%20Three%20Narrative.docx)
+- [Milestone Four Narrative: Databases](narratives/CS%20499%20Milestone%20Four%20Narrative.docx)
+
 ## Project Structure
 
-'''text
+```text
 miami_crime_storm_analysis/
 ├── database/
 │   └── dat375_export.sql
+├── narratives/
+│   ├── CS 499 Milestone Two Narrative.docx
+│   ├── CS 499 Milestone Three Narrative.docx
+│   └── CS 499 Milestone Four Narrative.docx
 ├── original_artifact/
 │   ├── dat375mod4Project_shaunSanders.ipynb
 │   └── README.md
