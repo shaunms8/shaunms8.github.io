@@ -43,3 +43,9 @@ miami_crime_storm_analysis/
     └── reports/
 # Miami Crime Storm Analysis
 Computer Science Capstone
+
+## Code Review Video
+
+The CS 499 code review video reviews the original Miami Crime and Storm Data Analysis System artifact, explains code review findings, and describes planned enhancements for software design and engineering, algorithms and data structures, and databases.
+
+Video link: [Code Review Video]https://youtu.be/gVhiYFHuaxI
