@@ -40,9 +40,25 @@ The algorithm calculates the average daily crime count as a baseline. It then ch
 
 This enhancement demonstrates algorithmic thinking because it goes beyond displaying data and creates a repeatable process for identifying dates where crime and storm activity overlap in a meaningful way.
 
+## Category Three: Databases
+
+Enhancement Summary
+
+For the database enhancement, I improved the MySQL portion of the Miami Crime and Storm Data Analysis System. The original project pulled raw crime and storm records into Python and performed much of the filtering, grouping, and merging in pandas. The enhanced version adds reusable SQL views and a combined summary table that prepare the data directly in MySQL before it is used in Python.
+
+This enhancement includes:
+- A clean Miami crime view filtered to the selected date range
+- A clean Miami-Dade storm event view
+- Daily crime and storm aggregation queries
+- A combined `miami_crime_storm_summary` table
+- SQL validation queries
+- Updated Python database access that reads from the enhanced summary table
+
+This demonstrates relational querying, filtering, joining, aggregation, database validation, and secure database-to-Python integration.
+
 ## Project Structure
 
-```text
+'''text
 miami_crime_storm_analysis/
 ├── database/
 │   └── dat375_export.sql
@@ -56,13 +72,15 @@ miami_crime_storm_analysis/
 │       ├── miami_daily_crime_storm_summary.csv
 │       ├── storm_crime_risk_rankings.csv
 │       └── miami_crime_storm_report.txt
+├── sql/
+│   └── enhancement_three_databases.sql
+├── .gitignore
 ├── analysis.py
 ├── cleaning.py
 ├── config.py
 ├── database.py
 ├── main.py
-├── reporting.py
-├── visualization.py
-├── requirements.txt
 ├── README.md
-└── .gitignore
+├── reporting.py
+├── requirements.txt
+└── visualization.py
