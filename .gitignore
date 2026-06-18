@@ -5,4 +5,4 @@ __pycache__/
 .DS_Store
 .env
 .ipynb_checkpoints/
-output/
+output/database/dat375_export.sql
