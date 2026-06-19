@@ -16,6 +16,18 @@ The project was enhanced for CS 499 Category One: Software Design and Engineerin
 
 Repository: [CS 499 Capstone GitHub Repository](https://github.com/shaunms8/shaunms8.github.io)
 
+## Key Code Files
+
+The full enhanced source code is available in the repository. The main files below show the technical improvements made for the capstone:
+
+- [main.py](main.py) — runs the full modular workflow for loading data, cleaning data, analyzing results, creating visuals, and exporting reports.
+- [analysis.py](analysis.py) — contains the storm/crime comparison logic and risk-ranking algorithm.
+- [cleaning.py](cleaning.py) — validates and prepares the crime and storm data before analysis.
+- [database.py](database.py) — manages the MySQL database connection and SQL data retrieval.
+- [reporting.py](reporting.py) — creates summary reports from the analysis results.
+- [visualization.py](visualization.py) — creates the final chart outputs.
+- [sql/enhancement_three_databases.sql](sql/enhancement_three_databases.sql) — contains the SQL database enhancement.
+
 ## Code Review
 
 The CS 499 code review video reviews the original Miami Crime and Storm Data Analysis System artifact, explains code review findings, and describes planned enhancements for software design and engineering, algorithms and data structures, and databases.
