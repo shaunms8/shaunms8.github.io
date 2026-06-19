@@ -1,4 +1,12 @@
-# Miami Crime and Storm Data Analysis System
+# Shaun Sanders | Miami Crime and Storm Data Analysis System | CS 499 Computer Science Capstone
+
+## Professional Self-Assessment
+
+My professional self-assessment serves as the formal introduction to this ePortfolio. It reflects on my growth throughout the Computer Science program, my preparation for a career in data analysis or data science, and the technical strengths demonstrated through my capstone work. The assessment explains how my coursework and enhanced artifact demonstrate skills in software engineering, algorithms and data structures, database development, security awareness, stakeholder communication, and professional documentation.
+
+The artifacts in this ePortfolio center on my enhanced Miami Crime and Storm Data Analysis System. Together, the enhancements show my ability to redesign an existing project, apply data structures and algorithms to support decision-making, improve database queries and reporting, and communicate technical results to a professional audience.
+
+[Read the full Professional Assessment](sources/Professional%20Assessment.docx)
 
 ## Project Overview
 
@@ -85,6 +93,8 @@ miami_crime_storm_analysis/
 │       ├── miami_daily_crime_storm_summary.csv
 │       ├── storm_crime_risk_rankings.csv
 │       └── miami_crime_storm_report.txt
+├── sources/
+│   └── Professional Assessment.docx
 ├── sql/
 │   └── enhancement_three_databases.sql
 ├── .gitignore
