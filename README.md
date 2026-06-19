@@ -76,6 +76,7 @@ The following narratives document the completed enhancements for the Miami Crime
 
 ## Project Structure
 
+```text
 miami_crime_storm_analysis/
 ├── database/
 │   └── dat375_export.sql
@@ -107,3 +108,4 @@ miami_crime_storm_analysis/
 ├── reporting.py
 ├── requirements.txt
 └── visualization.py
+```
