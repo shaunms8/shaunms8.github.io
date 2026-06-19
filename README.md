@@ -16,13 +16,13 @@ The project was enhanced for CS 499 Category One: Software Design and Engineerin
 
 Repository: [CS 499 Capstone GitHub Repository](https://github.com/shaunms8/shaunms8.github.io)
 
-## Code Review Video
+## Code Review
 
 The CS 499 code review video reviews the original Miami Crime and Storm Data Analysis System artifact, explains code review findings, and describes planned enhancements for software design and engineering, algorithms and data structures, and databases.
 
 Video link: [Code Review Video](https://youtu.be/gVhiYFHuaxI)
 
-# Enhancement Categories
+# Enhanced Artifact Categories
 
 ## Category One: Software Design and Engineering
 
@@ -66,7 +66,7 @@ This enhancement includes:
 
 This demonstrates relational querying, filtering, joining, aggregation, database validation, and secure database-to-Python integration.
 
-## CS 499 Narratives
+## Capstone Enhancement Narratives
 
 The following narratives document the completed enhancements for the Miami Crime and Storm Data Analysis System. Each narrative explains the purpose of the enhancement, the technical improvements made, and how the work aligns with the CS 499 course outcomes.
 
