@@ -1,0 +1,28 @@
+Miami Crime and Storm Data Analysis Report
+
+Analysis Period:
+August 1, 2024 through October 31, 2024
+
+Purpose:
+This report compares Miami crime activity with Miami-Dade storm event activity to determine whether storm days show different crime patterns than non-storm days.
+
+Storm Day Crime Summary:
+              count    mean  median   max
+StormDay                                 
+No Storm Day     80  873.54   884.5  1064
+Storm Day        12  874.75   858.5  1062
+
+Correlation Between Daily Crime Count and Daily Storm Count:
+-0.0444
+
+T-Test Results:
+t-statistic: 0.0367
+p-value: 0.9713
+
+Interpretation:
+The correlation value shows the strength and direction of the relationship between daily crime counts and storm event counts. A value close to 0 suggests little or no linear relationship. A positive value suggests crime counts increase as storm counts increase, while a negative value suggests crime counts decrease as storm counts increase.
+
+The t-test compares average crime counts on storm days and non-storm days. A lower p-value may suggest a more meaningful difference between the two groups, while a higher p-value suggests the difference may not be statistically significant.
+
+Software Design Enhancement:
+This report was generated as part of the Category One Software Design and Engineering enhancement. The original notebook-based workflow was redesigned into a modular Python project with separate files for configuration, database access, cleaning, analysis, visualization, and reporting.

@@ -1,0 +1,6 @@
+Date,CrimeCount,StormCount,BaselineCrime,RiskScore,RiskLevel
+2024-09-26,959,4,873.7,5.1,High
+2024-08-21,1062,1,873.7,2.22,High
+2024-08-15,1003,1,873.7,2.15,High
+2024-09-20,940,1,873.7,2.08,High
+2024-09-11,916,1,873.7,2.05,High

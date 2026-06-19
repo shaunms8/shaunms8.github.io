@@ -22,6 +22,16 @@ The CS 499 code review video reviews the original Miami Crime and Storm Data Ana
 
 Video link: [Code Review Video](https://youtu.be/gVhiYFHuaxI)
 
+## Course Outcomes Demonstrated
+
+This ePortfolio demonstrates all five CS 499 course outcomes through the enhanced Miami Crime and Storm Data Analysis System:
+
+1. **Collaborative Environments:** The project supports stakeholder decision-making by presenting crime and storm trends in a format that could be used by the Miami Police Department or public safety analysts.
+2. **Professional Communication:** The portfolio includes a code review video, written narratives, technical documentation, visual outputs, and a professional self-assessment.
+3. **Algorithmic Principles:** The project uses structured logic, daily aggregation, risk ranking, baseline comparison, sorting, and data structures to identify meaningful storm/crime overlap.
+4. **Computing Tools and Techniques:** The project uses Python, pandas, MySQL, SQL views, modular design, validation, visualization, and reporting to create a repeatable data analysis workflow.
+5. **Security Mindset:** The enhanced design separates configuration from source code, limits database access to needed fields, validates data before analysis, and avoids exposing sensitive credentials or unnecessary data.
+
 # Enhanced Artifact Categories
 
 ## Category One: Software Design and Engineering
@@ -54,7 +64,7 @@ This enhancement demonstrates algorithmic thinking because it goes beyond displa
 
 Enhancement Summary
 
-For the database enhancement, I improved the MySQL portion of the Miami Crime and Storm Data Analysis System. The original project pulled raw crime and storm records into Python and performed much of the filtering, grouping, and merging in pandas. The enhanced version adds reusable SQL views and a combined summary table that prepare the data directly in MySQL before it is used in Python.
+For the database enhancement, I improved the MySQL portion of the Miami Crime and Storm Data Analysis System. The original project pulled raw crime and storm records into Python and performed much of the filtering, grouping, and merging in pandas. The enhanced version adds reusable SQL views and a combined summary table that prepare the data directly in MySQL before it is used in Python. The database enhancement also demonstrates a security mindset by keeping database configuration separate from the main analysis logic, limiting queries to the fields needed for the analysis, and validating imported data before it is used in calculations. These changes reduce the risk of exposing credentials, working with incomplete data, or producing unreliable results from unvalidated records. The modular structure also makes the system easier to update if the database schema, access method, or reporting requirements change in the future.
 
 This enhancement includes:
 - A clean Miami crime view filtered to the selected date range
